@@ -1,0 +1,459 @@
+$blue: #1C7EF9;
+$pink: #FF0066;
+$grey1: #393939;
+$grey2: #4C4C4C;
+$grey3: #888888;
+$grey4: #B7B7B7;
+$grey5: #CCCCCC;
+$grey6: #D8D8D8;
+$grey7: #E2E2E2;
+$grey8: #EDEDED;
+$grey9: #F4F4F4;
+$grey10: #FAFAFA;
+$white: #FFFFFF;
+@font-face {
+	font-family: "ProximaNova-Black";
+	src: url("../fonts/ProximaNova-Black.otf");
+}
+@font-face {
+	font-family: "ProximaNova-Bold";
+	src: url("../fonts/ProximaNova-Bold.otf");
+}
+@font-face {
+	font-family: "ProximaNova-BoldIt";
+	src: url("../fonts/ProximaNova-BoldIt.otf");
+}
+@font-face {
+	font-family: "ProximaNova-Extrabld";
+	src: url("../fonts/ProximaNova-Extrabld.otf");
+}
+@font-face {
+	font-family: "ProximaNova-Light";
+	src: url("../fonts/ProximaNova-Light.otf");
+}
+@font-face {
+	font-family: "ProximaNova-Regular";
+	src: url("../fonts/ProximaNova-Regular.otf");
+}
+@font-face {
+	font-family: "ProximaNova-RegularItalic";
+	src: url("../fonts/ProximaNova-RegularItalic.otf");
+}
+@font-face {
+	font-family: "ProximaNova-Semibold";
+	src: url("../fonts/ProximaNova-Semibold.otf");
+}
+@font-face {
+	font-family: "ProximaNova-LightIt";
+	src: url("../fonts/ProximaNova-LightIt.otf");
+}
+@font-face {
+	font-family: "ProximaNova-SemiboldIt";
+	src: url("../fonts/ProximaNova-SemiboldIt.otf");
+}
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-style: normal;	
+	color: inherit;
+	text-align: center;
+	font-family: "ProximaNova-Light";
+	font-weight: normal;
+	color: $grey1;
+}
+body{
+	/*background: url(../images/design.png) no-repeat center -8px;
+	opacity:0.5;*/
+	background: $grey9;
+}
+header {
+	padding: 25px 0 33px;
+}
+.logo {
+	background: url("../images/logo.svg") no-repeat;
+	height: 33px;
+	width: 180px;
+	margin: 0 auto;
+}
+.container {
+	max-width: 980px;
+	margin: 0 auto;
+	padding-top: 55px;
+}
+.header {
+	max-width: 765px;
+	margin: 0 auto;
+}
+.header h1 {
+	font-family: "ProximaNova-Light";
+	font-size: 32px;
+	margin: 0 auto 22px;
+}
+.horizontalSeparator {
+	height: 1px;
+	background: $grey9;
+	clear: both;
+}
+.boxLeft {
+	float: left;
+}
+.header .boxLeft p {
+	font-family: "ProximaNova-Regular";
+	font-size: 16px;
+	margin: 21px 0 6px;
+	text-align: left;
+}
+.header .boxLeft h1 {
+	font-family: "ProximaNova-Semibold";
+	font-size: 24px;
+	margin: 0 0 7px;
+	text-align: left;
+}
+.header .boxLeft h2 {
+	font-family: "ProximaNova-Regular";
+	font-size: 18px;
+	text-align: left;
+	margin: 0 0 16px;
+}
+.header .boxLeft h2 b{
+	font-family: "ProximaNova-Bold";
+}
+.boxRight {
+	float: right;
+}
+.header .boxRight p{
+	font-family: "ProximaNova-Regular";
+	font-size: 14px;
+	line-height: 20px;
+	text-align: right;
+	margin: 55px 0 16px;
+	color: $grey3;
+}
+.header .boxRight p em{
+	color: $pink;
+}
+.header .boxRight a {
+	border-bottom: $grey3;
+	border-bottom-style: dotted;
+}
+.header .title {
+	margin-top: 37px;
+	margin-bottom: 60px;
+}
+.header .title h2 {
+	font-size: 24px;
+	line-height: 30px;
+	font-family: "ProximaNova-Regular";
+}
+.prices {
+	width: 913px;
+	margin: 0 auto;
+}
+.prices .column {
+	width: 277px;
+	float: left;
+	color: $grey1;
+	border-style: solid;
+	height: 336px;
+}
+
+.prices .column.business{
+	width: 349px;
+	height: 372px;
+	margin-top: -25px;
+	background: $grey1;
+}
+.prices .column h1, .prices .column h2 {
+	font-family: "ProximaNova-Semibold";
+	font-size: 32px;
+	margin: 26px 0 19px;
+}
+.prices .column.business {
+	h1{
+		margin: 51px 0 19px -10px;
+	}
+	h1, p, h2, em {
+		color: $white;
+	}
+}
+.prices .column h2 {
+	margin: 19px 0 -6px;
+}
+.prices .column p{
+	font-family: "ProximaNova-Regular";
+	font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 14px;
+}
+input[type="radio"]:checked+label{ 
+	font-size: 16px;
+	vertical-align: sub;
+} 
+input[type="radio"]:checked+label em{ 
+	font-size: 32px;
+} 
+input[type="radio"]:not(:checked)+label{ 
+	font-size: 14px;
+} 
+input[type="radio"]:not(:checked)+label em{ 
+	font-size: 16px;
+} 
+.prices .column label em {
+	font-family: "ProximaNova-Semibold";
+}
+.prices .column label {
+	font-family: "ProximaNova-Regular";
+	margin-left: 5px;
+}
+.prices .column.business p em {
+	font-family: "ProximaNova-Semibold";
+	font-size: 32px;
+}
+.prices .column.startUp{
+	border-right: none;
+}
+.prices .column.enterprise{
+	border-left: none;
+}
+.prices input[type=radio] {
+	transform: scale(1.2);
+}
+.prices .price{
+	text-align: left;
+	height: 114px;
+}
+.prices .column.business .price{
+	height: 83px;
+}
+.prices input[type=radio]#month {
+	margin: 40px 0 0 60px;
+}
+.prices input[type=radio]#year {
+	margin: 10px 0 0 60px;
+}
+.prices input[type=radio]:checked#year {
+	margin-top: 16px;
+}
+.prices .column button {
+	font-family: "ProximaNova-Regular";
+	font-size: 18px;
+	line-height: 34px;
+	width: 210px;
+	height: 34px;
+	border-radius: 5px;
+	border: none;
+	background: $grey1;
+	color: $white;
+}
+.prices .column.business button {
+	margin-top: -6px;
+	background: $pink;
+	color: $white;
+}
+.prices .column .price button {
+	margin: 70px 0 0 34px;
+	background: $white;
+	color: $grey1;
+	border: $grey1;
+	border-style: solid;
+}
+.prices .column .price p {
+	margin: 31px 0 0 -20px;
+}
+.prices .separator {
+	height: 1px;
+	background: $grey4;
+	width: 81px;
+	margin: 0 auto;
+}
+.prices .column.business .separator {
+	background: $grey3;
+}
+.questions {
+	margin-top: 33px;
+	margin-bottom: 35px;
+}
+.questions p{
+	font-family: "ProximaNova-Semibold";
+	font-size: 20px;
+}
+.questions p a {
+	font-family: "ProximaNova-Bold";
+	border-bottom: $grey1;
+	border-bottom-style: dotted;
+	border-bottom-width: 1.2px;
+	line-height: 26px;
+}
+.includes {
+	width: 941px;
+	margin: 0 auto 90px;
+	height: 790px;
+}
+.includes .column {
+	float: left;
+	width: 308px;
+	height: 730px;
+}
+.includes .column.startUp {
+	margin-left: 3px;
+}
+.includes .column.enterprise {
+	margin-left: 7px;
+}
+.includes .column.business {
+	margin-top: 20px;
+	border-right-color: $grey7;
+	border-right-style: solid;
+	border-left-color: $grey7;
+	border-left-style: solid;
+	border-width: 1px;
+	margin-left: 5px;
+}
+.includes .column.business .choseIf{
+	margin-top: -20px;
+}
+.includes .column .choseIf .or{
+	height: 4px;
+	width: 4px;
+	border-radius: 2px;
+	display: block;
+	background: $grey6;
+	text-align: center;
+	margin: 0 auto;
+}
+.includes .separator {
+	height: 3px;
+	background: $grey8;
+	width: 40px;
+	margin: 0 auto;
+}
+.includes .column .choseIf {
+	height: 139px;
+}
+.includes .column .choseIf h3 {
+	font-family: "ProximaNova-Semibold";
+	font-size: 13px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.includes .column .choseIf p {
+	font-family: "ProximaNova-Regular";
+	font-size: 14px;
+	margin-bottom: 6px;
+	line-height: 18px;
+	margin-top: 7px;
+	width: 300px;
+	margin-left: 3px;
+	color: $grey3;
+}
+.includes .column .features h1 {
+	font-family: "ProximaNova-Bold";
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-top: 28px;
+	margin-bottom: 58px;
+	color: $pink;
+}
+.includes .column .features p {
+	font-family: "ProximaNova-Semibold";
+	font-size: 16px;
+	margin-bottom: 28px;
+}
+.includes .column .features p span{
+	height: 2px;
+	background: $grey1;
+	width: 12px;
+	margin: 36px auto 42px;
+	display: block;
+}
+input[type=range].slider {
+	-webkit-appearance: none;
+	width: 79%;
+	margin: 5px 0;
+	background-color: $grey1;
+}
+input[type=range].slider:focus {
+	outline: none;
+}
+input[type=range].slider::-webkit-slider-runnable-track {
+	width: 79%;
+	height: 8px;
+	cursor: pointer;
+	box-shadow: 0px 0px 0px rgba(255, 255, 0, 0), 0px 0px 0px rgba(255, 255, 26, 0);
+	background: #4c4c4c;
+	border-radius: 15.3px;
+	border: 0px solid rgba(0, 0, 0, 0);
+}
+input[type=range].slider::-webkit-slider-thumb {
+	box-shadow: 1.7px 1.7px 0px rgba(0, 0, 0, 0.67), 0px 0px 1.7px rgba(13, 13, 13, 0.67);
+	border: 0px solid rgba(0, 0, 0, 0);
+	height: 18px;
+	width: 18px;
+	border-radius: 9px;
+	background: #d8d8d8;
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -5px;
+}
+input[type=range].slider:focus::-webkit-slider-runnable-track {
+	background: #5b5b5b;
+}
+input[type=range].slider::-moz-range-track {
+	width: 79%;
+	height: 8px;
+	cursor: pointer;
+	box-shadow: 0px 0px 0px rgba(255, 255, 0, 0), 0px 0px 0px rgba(255, 255, 26, 0);
+	background: #4c4c4c;
+	border-radius: 15.3px;
+	border: 0px solid rgba(0, 0, 0, 0);
+}
+input[type=range].slider::-moz-range-thumb {
+	box-shadow: 1.7px 1.7px 0px rgba(0, 0, 0, 0.67), 0px 0px 1.7px rgba(13, 13, 13, 0.67);
+	border: 0px solid rgba(0, 0, 0, 0);
+	height: 18px;
+	width: 18px;
+	border-radius: 9px;
+	background: #d8d8d8;
+	cursor: pointer;
+}
+input[type=range].slider::-ms-track {
+	width: 79%;
+	height: 8px;
+	cursor: pointer;
+	background: transparent;
+	border-color: transparent;
+	color: transparent;
+}
+input[type=range].slider::-ms-fill-lower {
+	background: #3d3d3d;
+	border: 0px solid rgba(0, 0, 0, 0);
+	border-radius: 30.6px;
+	box-shadow: 0px 0px 0px rgba(255, 255, 0, 0), 0px 0px 0px rgba(255, 255, 26, 0);
+}
+input[type=range].slider::-ms-fill-upper {
+	background: #4c4c4c;
+	border: 0px solid rgba(0, 0, 0, 0);
+	border-radius: 30.6px;
+	box-shadow: 0px 0px 0px rgba(255, 255, 0, 0), 0px 0px 0px rgba(255, 255, 26, 0);
+}
+input[type=range].slider::-ms-thumb {
+	box-shadow: 1.7px 1.7px 0px rgba(0, 0, 0, 0.67), 0px 0px 1.7px rgba(13, 13, 13, 0.67);
+	border: 0px solid rgba(0, 0, 0, 0);
+	height: 18px;
+	width: 18px;
+	border-radius: 9px;
+	background: #d8d8d8;
+	cursor: pointer;
+	height: 8px;
+}
+input[type=range].slider:focus::-ms-fill-lower {
+	background: #4c4c4c;
+}
+input[type=range].slider:focus::-ms-fill-upper {
+	background: #5b5b5b;
+}
+.range-slider {
+	margin-top: -9px;
+}
