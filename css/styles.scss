@@ -57,16 +57,15 @@ $white: #FFFFFF;
 	list-style: none;
 	text-decoration: none;
 	font-style: normal;	
-	color: inherit;
 	text-align: center;
-	font-family: "ProximaNova-Light";
 	font-weight: normal;
-	color: $grey1;
 }
 body{
-	/*background: url(../images/design.png) no-repeat center -8px;
-	opacity:0.5;*/
-	background: $grey9;
+	background: url(../images/design.png) no-repeat center -8px;
+	opacity:0.5;
+	/*background: $grey9;*/
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 header {
 	padding: 25px 0 33px;
@@ -82,6 +81,7 @@ header {
 	margin: 0 auto;
 	padding-top: 55px;
 	background: $white;
+	border-radius: 6px;
 }
 .header {
 	max-width: 765px;
@@ -90,7 +90,9 @@ header {
 .header h1 {
 	font-family: "ProximaNova-Light";
 	font-size: 32px;
+	line-height: 32px;
 	margin: 0 auto 22px;
+	color: $grey1;
 }
 .horizontal-separator {
 	height: 1px;
@@ -99,30 +101,40 @@ header {
 }
 .box-left {
 	float: left;
+	height: 110px;
 }
 .header .box-left p {
 	font-family: "ProximaNova-Regular";
 	font-size: 16px;
-	margin: 21px 0 6px;
+	margin: 13px 0 -4px;
 	text-align: left;
+	line-height: 32px;
+	color: $grey1;
+	font-weight: bold;
 }
 .header .box-left h1 {
 	font-family: "ProximaNova-Semibold";
 	font-size: 24px;
-	margin: 0 0 7px;
+	margin: 0 0 2px;
 	text-align: left;
+	line-height: 32px;
+	color: $grey1;
 }
 .header .box-left h2 {
 	font-family: "ProximaNova-Regular";
 	font-size: 18px;
 	text-align: left;
 	margin: 0 0 16px;
+	line-height: 22px;
+	color: $grey1;
+	font-weight: bold;
 }
-.header .box-left h2 b{
+.header .box-left b{
 	font-family: "ProximaNova-Bold";
 }
 .box-right {
 	float: right;
+	height: 110px;
 }
 .header .box-right p{
 	font-family: "ProximaNova-Regular";
@@ -132,12 +144,14 @@ header {
 	margin: 55px 0 16px;
 	color: $grey3;
 }
-.header .box-right p em{
+.header .box-right em{
 	color: $pink;
 }
 .header .box-right a {
 	border-bottom: $grey3;
-	border-bottom-style: dotted;
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	color: $grey3;
 }
 .header .title {
 	margin-top: 37px;
@@ -147,6 +161,7 @@ header {
 	font-size: 24px;
 	line-height: 30px;
 	font-family: "ProximaNova-Regular";
+	color: $grey1;
 }
 .prices {
 	/*width: 916px;*/
@@ -154,20 +169,23 @@ header {
 	text-align: center;
 }
 .prices .column {
-	width: 277px;
-	/*float: left;*/
-	color: $grey1;
+	width: 279px;
+	/* float: left; */
+	color: #393939;
 	border-style: solid;
 	height: 336px;
 	display: inline-block;
-	margin-left: -4px;
-	margin-right: -4px;
+	margin-left: -2px;
+	margin-right: -3px;
+	border-width: 3px;
+	border-color: #393939;
+	vertical-align: top;
 }
 
 .prices .column.business{
-	width: 349px;
-	height: 372px;
-	margin-top: -25px;
+	width: 347px;
+	height: 371px;
+	margin-top: -24px;
 	background: $grey1;
 }
 .prices .column h1, .prices .column h2 {
@@ -184,7 +202,7 @@ header {
 	}
 }
 .prices .column h2 {
-	margin: 19px 0 -6px;
+	margin: 19px 0 -4px;
 }
 .prices .column p{
 	font-family: "ProximaNova-Regular";
@@ -194,6 +212,7 @@ header {
 }
 input[type="radio"]:checked+label{ 
 	font-size: 16px;
+	line-height: 22px;
 	vertical-align: sub;
 } 
 input[type="radio"]:checked+label em{ 
@@ -201,18 +220,20 @@ input[type="radio"]:checked+label em{
 } 
 input[type="radio"]:not(:checked)+label{ 
 	font-size: 14px;
+	line-height: 22px;
 } 
 input[type="radio"]:not(:checked)+label em{ 
 	font-size: 16px;
+	line-height: 22px;
 } 
 .prices .column label em {
 	font-family: "ProximaNova-Semibold";
 }
 .prices .column label {
 	font-family: "ProximaNova-Regular";
-	margin-left: 5px;
+	margin-left: 3px;
 }
-.prices .column.business p em {
+.prices .column.business em {
 	font-family: "ProximaNova-Semibold";
 	font-size: 32px;
 }
@@ -236,10 +257,13 @@ input[type="radio"]:not(:checked)+label em{
 	margin: 40px 0 0 60px;
 }
 .prices input[type=radio]#year {
-	margin: 10px 0 0 60px;
+	margin: 8px 0 0 60px;
 }
 .prices input[type=radio]:checked#year {
-	margin-top: 16px;
+	margin-top: 10px;
+}
+button {
+	cursor: pointer;
 }
 .prices .column button {
 	font-family: "ProximaNova-Regular";
@@ -253,18 +277,19 @@ input[type="radio"]:not(:checked)+label em{
 	color: $white;
 }
 .prices .column.business button {
-	margin-top: -6px;
+	margin-top: -8px;
 	background: $pink;
 	color: $white;
 }
 .prices .column .price button {
-	margin: 70px 0 0 34px;
+	margin: 69px 0 0 34px;
 	background: $white;
 	color: $grey1;
 	border: $grey1;
 	border-style: solid;
+	border-width: 2px;
 }
-.prices .column .price p {
+.price p {
 	margin: 31px 0 0 -20px;
 }
 .prices .separator {
@@ -277,22 +302,24 @@ input[type="radio"]:not(:checked)+label em{
 	background: $grey3;
 }
 .questions {
-	margin-top: 33px;
-	margin-bottom: 35px;
+	margin-top: 31px;
+	margin-bottom: 26px;
 }
 .questions p{
 	font-family: "ProximaNova-Semibold";
 	font-size: 20px;
+	color: $grey1;
 }
-.questions p a {
+.questions a {
 	font-family: "ProximaNova-Bold";
 	border-bottom: $grey1;
 	border-bottom-style: dotted;
-	border-bottom-width: 1.2px;
+	border-bottom-width: 1px;
 	line-height: 26px;
+	color: $grey1;
 }
 .includes {
-	width: 941px;
+	width: 944px;
 	margin: 0 auto 90px;
 	height: 790px;
 }
@@ -316,12 +343,12 @@ input[type="radio"]:not(:checked)+label em{
 	border-width: 1px;
 	margin-left: 5px;
 }
-.includes .column.business .choseIf{
+.column.business .chose-if{
 	margin-top: -20px;
 }
-.includes .column .choseIf .or{
+.chose-if .or{
 	height: 4px;
-	width: 4px;
+	width: 3px;
 	border-radius: 2px;
 	display: block;
 	background: $grey6;
@@ -329,23 +356,26 @@ input[type="radio"]:not(:checked)+label em{
 	margin: 0 auto;
 }
 .includes .separator {
-	height: 3px;
-	background: $grey8;
+	height: 2px;
+	background: $grey5;
 	width: 40px;
 	margin: 0 auto;
 }
-.includes .column .choseIf {
-	height: 139px;
+.chose-if {
+	height: 149px;
 }
-.includes .column .choseIf h3 {
+.chose-if h3 {
 	font-family: "ProximaNova-Semibold";
 	font-size: 13px;
+	line-height: 32px;
 	text-transform: uppercase;
-	margin-bottom: 20px;
+	margin-bottom: 9px;
+	color: $grey1;
 }
-.includes .column .choseIf p {
+.chose-if p {
 	font-family: "ProximaNova-Regular";
 	font-size: 14px;
+	line-height: 18px;
 	margin-bottom: 6px;
 	line-height: 18px;
 	margin-top: 7px;
@@ -353,20 +383,23 @@ input[type="radio"]:not(:checked)+label em{
 	margin-left: 3px;
 	color: $grey3;
 }
-.includes .column .features h1 {
+.features h1 {
 	font-family: "ProximaNova-Bold";
 	font-size: 16px;
+	line-height: 22px;
 	text-transform: uppercase;
 	margin-top: 28px;
-	margin-bottom: 58px;
+	margin-bottom: 50px;
 	color: $pink;
 }
-.includes .column .features p {
+.features p {
 	font-family: "ProximaNova-Semibold";
 	font-size: 16px;
-	margin-bottom: 28px;
+	line-height: 22px;
+	margin-bottom: 22px;
+	color: $grey1;
 }
-.includes .column .features p span{
+.hyphen{
 	height: 2px;
 	background: $grey1;
 	width: 12px;
@@ -460,5 +493,6 @@ input[type=range].slider:focus::-ms-fill-upper {
 	background: #5b5b5b;
 }
 .range-slider {
-	margin-top: -9px;
+	margin-top: -12px;
+	margin-bottom: -1px;
 }
