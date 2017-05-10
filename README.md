@@ -1,1 +1,1 @@
-"# mural-test" 
+# mural-test
