@@ -92,39 +92,39 @@ header {
 	font-size: 32px;
 	margin: 0 auto 22px;
 }
-.horizontalSeparator {
+.horizontal-separator {
 	height: 1px;
 	background: $grey9;
 	clear: both;
 }
-.boxLeft {
+.box-left {
 	float: left;
 }
-.header .boxLeft p {
+.header .box-left p {
 	font-family: "ProximaNova-Regular";
 	font-size: 16px;
 	margin: 21px 0 6px;
 	text-align: left;
 }
-.header .boxLeft h1 {
+.header .box-left h1 {
 	font-family: "ProximaNova-Semibold";
 	font-size: 24px;
 	margin: 0 0 7px;
 	text-align: left;
 }
-.header .boxLeft h2 {
+.header .box-left h2 {
 	font-family: "ProximaNova-Regular";
 	font-size: 18px;
 	text-align: left;
 	margin: 0 0 16px;
 }
-.header .boxLeft h2 b{
+.header .box-left h2 b{
 	font-family: "ProximaNova-Bold";
 }
-.boxRight {
+.box-right {
 	float: right;
 }
-.header .boxRight p{
+.header .box-right p{
 	font-family: "ProximaNova-Regular";
 	font-size: 14px;
 	line-height: 20px;
@@ -132,10 +132,10 @@ header {
 	margin: 55px 0 16px;
 	color: $grey3;
 }
-.header .boxRight p em{
+.header .box-right p em{
 	color: $pink;
 }
-.header .boxRight a {
+.header .box-right a {
 	border-bottom: $grey3;
 	border-bottom-style: dotted;
 }
@@ -212,7 +212,7 @@ input[type="radio"]:not(:checked)+label em{
 	font-family: "ProximaNova-Semibold";
 	font-size: 32px;
 }
-.prices .column.startUp{
+.prices .column.start-up{
 	border-right: none;
 }
 .prices .column.enterprise{
@@ -297,7 +297,7 @@ input[type="radio"]:not(:checked)+label em{
 	width: 308px;
 	height: 730px;
 }
-.includes .column.startUp {
+.includes .column.start-up {
 	margin-left: 3px;
 }
 .includes .column.enterprise {
