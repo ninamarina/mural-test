@@ -5,7 +5,7 @@
 	<title>Checkout</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-<body style="background: #F4F4F4">
+<body>
 	<header>
 		<div class="logo">
 		</div>
@@ -25,39 +25,50 @@
 				</p>
 			</div>
 			<div class="horizontalSeparator"></div>
-			<h2>Choose a plan that works best for your needs and your team size.<br>
-				And leave some room to grow!
-			</h2>
+			<div class="title">
+				<h2>Choose a plan that works best for your needs and your team size.<br>
+					And leave some room to grow!
+				</h2>
+			</div>
 		</div>
 		<div class="prices">
 			<div class="column startUp">
 				<h1>Startup</h1>
-				<span></span>
-				<h1>5</h1>
+				<div class="separator"></div>
+				<h2>5</h2>
 				<p>users</p>
-				<span></span>
-				<input type="radio" name="startUp" value="month" id="month"><label for="month"> <em>$29</em> / month </label><br>
-				<input type="radio" name="startUp" value="year" id="year"><label for="year"> <em>$300</em> / year</label><br>
+				<div class="separator"></div>
+				<div class="price">
+					<input type="radio" name="startUp" value="month" id="month" checked="checked"><label for="month"> <em>$29</em> / month </label><br>
+					<input type="radio" name="startUp" value="year" id="year"><label for="year"> <em>$300</em> / year</label><br>
+				</div>
 				<button>CHOOSE THIS PLAN</button>	
 			</div>
 			<div class="column business">
 				<h1>Business</h1>
-				<span></span>
-				<h1>5</h1>
+				<div class="separator"></div>
+				<h2>5</h2>
 				<p>users</p>
-				<div class="slider"></div>
-				<p><em>$600</em> / year </p>
+				<div class="range-slider">
+					<input class="slider" type="range" value="5" min="5" max="30" step="1">
+				</div>
+				<div class="price">
+					<p><em>$600</em> / year </p>
+				</div>
 				<button>CHOOSE THIS PLAN</button>	
 			</div>
 			<div class="column enterprise">
 				<h1>Enterprise</h1>
-				<span></span>
-				<h1>30+</h1>
+				<div class="separator"></div>
+				<h2>30+</h2>
 				<p>users</p>
-				<span></span>
-				<button>LEARN MORE</button><br>
+				<div class="separator"></div>
+				<div class="price">
+					<button>LEARN MORE</button><br>
+				</div>
 				<button>CONTACT US</button>	
 			</div>
+			<div style="clear:both;"></div>
 		</div>
 		<div class="questions">
 			<p>Questions? <a href="mailto:test@mural.com">Send us an email</a> or give us a call at <a href="tel:14158003524">+1 (415) 800 3524</a></p>
@@ -67,10 +78,10 @@
 				<div class="choseIf">
 					<h3>CHOOSE THIS PLAN IF YOU'RE A...</h3>
 					<p>Growing startup</p>
-					<span class="or"></span>
+					<div class="or"></div>
 					<p>Freelancer with a few rotating clients</p>
-					<span class="separator"></span>
 				</div>
+				<div class="separator"></div>
 				<div class="features">
 					<h1>STARTUP includes:</h1>
 					<p>5 Project Rooms</p>
@@ -78,24 +89,24 @@
 					<p>Visual Thinking Tools</p>
 					<p>Collaboration Tools</p>
 					<p>Self-Service Support</p>
-					<p>-</p>
-					<p>-</p>
-					<p>-</p>
-					<p>-</p>
-					<p>-</p>
-					<p>-</p>
+					<p><span></span></p>
+					<p><span></span></p>
+					<p><span></span></p>
+					<p><span></span></p>
+					<p><span></span></p>
+					<p><span></span></p>
 				</div>
 			</div>
 			<div class="column business">
 				<div class="choseIf">
 					<h3>CHOOSE THIS PLAN IF YOU'RE A...</h3>
 					<p>Leading design team within a big company</p>
-					<span class="or"></span>
+					<div class="or"></div>
 					<p>Distributed business in which visual
 						collaboration is key to success
 					</p>
-					<span class="separator"></span>
 				</div>
+				<div class="separator"></div>
 				<div class="features">
 					<h1>Business includes:</h1>
 					<p>Unlimited Rooms</p>
@@ -106,9 +117,9 @@
 					<p>Larger Team Sizes</p>
 					<p>Custom Templates</p>
 					<p>Guest Accounts</p>
-					<p>-</p>
-					<p>-</p>
-					<p>-</p>
+					<p><span></span></p>
+					<p><span></span></p>
+					<p><span></span></p>
 				</div>
 			</div>
 			<div class="column enterprise">
@@ -117,10 +128,10 @@
 					<p>Business that successfully integrated MURAL
 						and is ready to deploy at scale
 					</p>
-					<span class="or"></span>
+					<div class="or"></div>
 					<p>Design-led Fortune 1000 Company</p>
-					<span class="separator"></span>
 				</div>
+				<div class="separator"></div>
 				<div class="features">
 					<h1>ENTERPRISE includes:</h1>
 					<p>Unlimited Rooms</p>
@@ -136,6 +147,7 @@
 					<p>Single Sign-On SAML Integration</p>
 				</div>
 			</div>
+			<div style="clear:both;"></div>
 		</div>
 	</div>
 </body>
