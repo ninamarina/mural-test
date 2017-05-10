@@ -149,15 +149,19 @@ header {
 	font-family: "ProximaNova-Regular";
 }
 .prices {
-	width: 916px;
+	/*width: 916px;*/
 	margin: 0 auto;
+	text-align: center;
 }
 .prices .column {
 	width: 277px;
-	float: left;
+	/*float: left;*/
 	color: $grey1;
 	border-style: solid;
 	height: 336px;
+	display: inline-block;
+	margin-left: -4px;
+	margin-right: -4px;
 }
 
 .prices .column.business{
