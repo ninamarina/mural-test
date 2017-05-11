@@ -54,10 +54,8 @@ $white: #FFFFFF;
 * {
 	margin: 0;
 	padding: 0;
-	list-style: none;
 	text-decoration: none;
 	font-style: normal;	
-	text-align: center;
 	font-weight: normal;
 }
 body{
@@ -86,13 +84,14 @@ header {
 .header {
 	max-width: 765px;
 	margin: 0 auto;
-}
-.header h1 {
-	font-family: "ProximaNova-Light";
-	font-size: 32px;
-	line-height: 32px;
-	margin: 0 auto 22px;
-	color: $grey1;
+	h1 {
+		font-family: "ProximaNova-Light";
+		font-size: 32px;
+		line-height: 32px;
+		margin: 0 20px 22px;
+		color: $grey1;
+		text-align: center;
+	}
 }
 .horizontal-separator {
 	height: 1px;
@@ -102,113 +101,179 @@ header {
 .box-left {
 	float: left;
 	height: 110px;
-}
-.header .box-left p {
-	font-family: "ProximaNova-Regular";
-	font-size: 16px;
-	margin: 13px 0 -4px;
-	text-align: left;
-	line-height: 32px;
 	color: $grey1;
-	font-weight: bold;
-}
-.header .box-left h1 {
-	font-family: "ProximaNova-Semibold";
-	font-size: 24px;
-	margin: 0 0 2px;
 	text-align: left;
-	line-height: 32px;
-	color: $grey1;
-}
-.header .box-left h2 {
-	font-family: "ProximaNova-Regular";
-	font-size: 18px;
-	text-align: left;
-	margin: 0 0 16px;
-	line-height: 22px;
-	color: $grey1;
-	font-weight: bold;
-}
-.header .box-left b{
-	font-family: "ProximaNova-Bold";
+	p {
+		font-family: "ProximaNova-Regular";
+		font-size: 16px;
+		margin: 13px 0 -4px;
+		line-height: 32px;
+		font-weight: bold;
+	}
+	h1 {
+		font-family: "ProximaNova-Semibold";
+		font-size: 24px;
+		margin: 0 0 2px;
+		line-height: 32px;
+	}
+	h2 {
+		font-family: "ProximaNova-Regular";
+		font-size: 18px;
+		margin: 0 0 16px;
+		line-height: 22px;
+		font-weight: bold;
+	}
+	b{
+		font-family: "ProximaNova-Bold";
+	}
 }
 .box-right {
 	float: right;
 	height: 110px;
-}
-.header .box-right p{
-	font-family: "ProximaNova-Regular";
-	font-size: 14px;
-	line-height: 20px;
-	text-align: right;
-	margin: 55px 0 16px;
-	color: $grey3;
-}
-.header .box-right em{
-	color: $pink;
-}
-.header .box-right a {
-	border-bottom: $grey3;
-	border-bottom-style: dashed;
-	border-bottom-width: 1px;
-	color: $grey3;
-}
+	p{
+		font-family: "ProximaNova-Regular";
+		font-size: 14px;
+		line-height: 20px;
+		text-align: right;
+		margin: 55px 0 16px;
+		color: $grey3;
+	}
+	em{
+		color: $pink;
+	}
+	a {
+		border-bottom: $grey3;
+		border-bottom-style: dashed;
+		border-bottom-width: 1px;
+		color: $grey3;
+	}
+} 
 .header .title {
 	margin-top: 37px;
 	margin-bottom: 60px;
-}
-.header .title h2 {
-	font-size: 24px;
-	line-height: 30px;
-	font-family: "ProximaNova-Regular";
-	color: $grey1;
+	h2 {
+		font-size: 24px;
+		line-height: 30px;
+		font-family: "ProximaNova-Regular";
+		color: $grey1;
+		text-align: center;
+	}
 }
 .prices {
-	/*width: 916px;*/
 	margin: 0 auto;
 	text-align: center;
-}
-.prices .column {
-	width: 279px;
-	/* float: left; */
-	color: #393939;
-	border-style: solid;
-	height: 336px;
-	display: inline-block;
-	margin-left: -2px;
-	margin-right: -3px;
-	border-width: 3px;
-	border-color: #393939;
-	vertical-align: top;
+	.column {
+		width: 279px;
+		color: #393939;
+		border-style: solid;
+		height: 336px;
+		display: inline-block;
+		margin-left: -2px;
+		margin-right: -3px;
+		border-width: 3px;
+		border-color: #393939;
+		vertical-align: top;
+		h1, h2 {
+			font-family: "ProximaNova-Semibold";
+			font-size: 32px;
+			margin: 26px 0 19px;
+		}
+		h2 {
+			margin: 19px 0 -4px;
+		}
+		p{
+			font-family: "ProximaNova-Regular";
+			font-size: 16px;
+			line-height: 22px;
+			margin-bottom: 14px;
+		}
+		label {
+			font-family: "ProximaNova-Regular";
+			margin-left: 3px;
+			em {
+				font-family: "ProximaNova-Semibold";
+			}
+		}
+		button {
+			font-family: "ProximaNova-Regular";
+			font-size: 18px;
+			line-height: 34px;
+			width: 210px;
+			height: 34px;
+			border-radius: 5px;
+			border: none;
+			background: $grey1;
+			color: $white;
+		}
+	}
+	.column.business{
+		width: 347px;
+		height: 371px;
+		margin-top: -24px;
+		background: $grey1;
+		h1{
+			margin: 51px 0 19px -10px;
+		}
+		h1, p, h2, em {
+			color: $white;
+			text-align: center;
+		}
+		em {
+			font-family: "ProximaNova-Semibold";
+			font-size: 32px;
+		}
+		.price{
+			height: 83px;
+		}
+		button {
+			margin-top: -8px;
+			background: $pink;
+			color: $white;
+		}
+		.separator {
+			background: $grey3;
+		}
+	}
+	.column.start-up{
+		border-right: none;
+	}
+	.column.enterprise{
+		border-left: none;
+	}
+	.price{
+		text-align: left;
+		height: 114px;
+		button {
+			margin: 69px 0 0 34px;
+			background: $white;
+			color: $grey1;
+			border: $grey1;
+			border-style: solid;
+			border-width: 2px;
+		}
+		p {
+			margin: 31px 0 0 -20px;
+		}
+	}
+	.separator {
+		height: 1px;
+		background: $grey4;
+		width: 81px;
+		margin: 0 auto;
+	}
 }
 
-.prices .column.business{
-	width: 347px;
-	height: 371px;
-	margin-top: -24px;
-	background: $grey1;
+input[type=radio] {
+	transform: scale(1.2);
 }
-.prices .column h1, .prices .column h2 {
-	font-family: "ProximaNova-Semibold";
-	font-size: 32px;
-	margin: 26px 0 19px;
+input[type=radio]#month {
+	margin: 40px 0 0 60px;
 }
-.prices .column.business {
-	h1{
-		margin: 51px 0 19px -10px;
-	}
-	h1, p, h2, em {
-		color: $white;
-	}
+input[type=radio]#year {
+	margin: 8px 0 0 60px;
 }
-.prices .column h2 {
-	margin: 19px 0 -4px;
-}
-.prices .column p{
-	font-family: "ProximaNova-Regular";
-	font-size: 16px;
-	line-height: 22px;
-	margin-bottom: 14px;
+input[type=radio]:checked#year {
+	margin-top: 10px;
 }
 input[type="radio"]:checked+label{ 
 	font-size: 16px;
@@ -226,179 +291,114 @@ input[type="radio"]:not(:checked)+label em{
 	font-size: 16px;
 	line-height: 22px;
 } 
-.prices .column label em {
-	font-family: "ProximaNova-Semibold";
-}
-.prices .column label {
-	font-family: "ProximaNova-Regular";
-	margin-left: 3px;
-}
-.prices .column.business em {
-	font-family: "ProximaNova-Semibold";
-	font-size: 32px;
-}
-.prices .column.start-up{
-	border-right: none;
-}
-.prices .column.enterprise{
-	border-left: none;
-}
-.prices input[type=radio] {
-	transform: scale(1.2);
-}
-.prices .price{
-	text-align: left;
-	height: 114px;
-}
-.prices .column.business .price{
-	height: 83px;
-}
-.prices input[type=radio]#month {
-	margin: 40px 0 0 60px;
-}
-.prices input[type=radio]#year {
-	margin: 8px 0 0 60px;
-}
-.prices input[type=radio]:checked#year {
-	margin-top: 10px;
-}
 button {
 	cursor: pointer;
-}
-.prices .column button {
-	font-family: "ProximaNova-Regular";
-	font-size: 18px;
-	line-height: 34px;
-	width: 210px;
-	height: 34px;
-	border-radius: 5px;
-	border: none;
-	background: $grey1;
-	color: $white;
-}
-.prices .column.business button {
-	margin-top: -8px;
-	background: $pink;
-	color: $white;
-}
-.prices .column .price button {
-	margin: 69px 0 0 34px;
-	background: $white;
-	color: $grey1;
-	border: $grey1;
-	border-style: solid;
-	border-width: 2px;
-}
-.price p {
-	margin: 31px 0 0 -20px;
-}
-.prices .separator {
-	height: 1px;
-	background: $grey4;
-	width: 81px;
-	margin: 0 auto;
-}
-.prices .column.business .separator {
-	background: $grey3;
 }
 .questions {
 	margin-top: 31px;
 	margin-bottom: 26px;
-}
-.questions p{
-	font-family: "ProximaNova-Semibold";
-	font-size: 20px;
-	color: $grey1;
-}
-.questions a {
-	font-family: "ProximaNova-Bold";
-	border-bottom: $grey1;
-	border-bottom-style: dotted;
-	border-bottom-width: 1px;
-	line-height: 26px;
-	color: $grey1;
+	p{
+		font-family: "ProximaNova-Semibold";
+		font-size: 20px;
+		color: $grey1;
+		text-align: center;
+	}
+	a {
+		font-family: "ProximaNova-Bold";
+		border-bottom: $grey1;
+		border-bottom-style: dotted;
+		border-bottom-width: 1px;
+		line-height: 26px;
+		color: $grey1;
+	}
 }
 .includes {
 	width: 944px;
 	margin: 0 auto 90px;
 	height: 790px;
-}
-.includes .column {
-	float: left;
-	width: 308px;
-	height: 730px;
-}
-.includes .column.start-up {
-	margin-left: 3px;
-}
-.includes .column.enterprise {
-	margin-left: 7px;
-}
-.includes .column.business {
-	margin-top: 20px;
-	border-right-color: $grey7;
-	border-right-style: solid;
-	border-left-color: $grey7;
-	border-left-style: solid;
-	border-width: 1px;
-	margin-left: 5px;
-}
-.column.business .chose-if{
-	margin-top: -20px;
-}
-.chose-if .or{
-	height: 4px;
-	width: 3px;
-	border-radius: 2px;
-	display: block;
-	background: $grey6;
-	text-align: center;
-	margin: 0 auto;
-}
-.includes .separator {
-	height: 2px;
-	background: $grey5;
-	width: 40px;
-	margin: 0 auto;
+	.column {
+		float: left;
+		width: 308px;
+		height: 730px;
+	}
+	.column.start-up {
+		margin-left: 3px;
+	}
+	.column.enterprise {
+		margin-left: 7px;
+	}
+	.column.business {
+		margin-top: 28px;
+		border-right-color: $grey7;
+		border-right-style: solid;
+		border-left-color: $grey7;
+		border-left-style: solid;
+		border-width: 1px;
+		margin-left: 7px;
+		.chose-if{
+			margin-top: -28px;
+		}
+	}
+	.separator {
+		height: 2px;
+		background: $grey5;
+		width: 40px;
+		margin: 0 auto;
+	}
 }
 .chose-if {
 	height: 149px;
+	.or{
+		height: 4px;
+		width: 3px;
+		border-radius: 2px;
+		display: block;
+		background: $grey6;
+		text-align: center;
+		margin: 0 auto;
+	}
+	h3 {
+		font-family: "ProximaNova-Semibold";
+		font-size: 13px;
+		line-height: 32px;
+		text-transform: uppercase;
+		margin-bottom: 9px;
+		color: $grey1;
+		text-align: center;
+	}
+	p {
+		font-family: "ProximaNova-Regular";
+		font-size: 14px;
+		line-height: 18px;
+		margin-bottom: 6px;
+		line-height: 18px;
+		margin-top: 7px;
+		width: 300px;
+		margin-left: 3px;
+		color: $grey3;
+		text-align: center;
+	}
 }
-.chose-if h3 {
-	font-family: "ProximaNova-Semibold";
-	font-size: 13px;
-	line-height: 32px;
-	text-transform: uppercase;
-	margin-bottom: 9px;
-	color: $grey1;
-}
-.chose-if p {
-	font-family: "ProximaNova-Regular";
-	font-size: 14px;
-	line-height: 18px;
-	margin-bottom: 6px;
-	line-height: 18px;
-	margin-top: 7px;
-	width: 300px;
-	margin-left: 3px;
-	color: $grey3;
-}
-.features h1 {
-	font-family: "ProximaNova-Bold";
-	font-size: 16px;
-	line-height: 22px;
-	text-transform: uppercase;
-	margin-top: 28px;
-	margin-bottom: 50px;
-	color: $pink;
-}
-.features p {
-	font-family: "ProximaNova-Semibold";
-	font-size: 16px;
-	line-height: 22px;
-	margin-bottom: 22px;
-	color: $grey1;
-}
+.features {
+	h1 {
+		font-family: "ProximaNova-Bold";
+		font-size: 16px;
+		line-height: 22px;
+		text-transform: uppercase;
+		margin-top: 28px;
+		margin-bottom: 50px;
+		color: $pink;
+		text-align: center;
+	}
+	p {
+		font-family: "ProximaNova-Semibold";
+		font-size: 16px;
+		line-height: 22px;
+		margin-bottom: 22px;
+		color: $grey1;
+		text-align: center;
+	}
+} 
 .hyphen{
 	height: 2px;
 	background: $grey1;
@@ -495,4 +495,159 @@ input[type=range].slider:focus::-ms-fill-upper {
 .range-slider {
 	margin-top: -12px;
 	margin-bottom: -1px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px)  and (max-device-width : 480px){
+	body{
+		background: $white;
+	}
+	header {
+		background: $grey9;
+	}
+	.container {
+		border-radius: 0px;
+		padding-top: 30px;
+	}
+	.horizontal-separator {
+		margin: 0 auto;
+		width: 80%;
+	}
+	.box-left {
+		float: none;
+		height: 70px;
+		text-align: center;
+	}
+	.header .title {
+		margin: 24px 20px 26px;
+		h2 {
+			font-size: 17px;
+		}
+	}
+	.box-right {
+		float: none;
+		height: 80px;
+		p {
+			margin: 55px 0 16px;
+			text-align: center;
+		}
+	}
+	.prices {
+		.column {
+			margin: 0;
+		}
+		.column.business {
+			width: 100%;
+			margin-top: -3px;
+			border: none;
+		}
+		.column.start-up {
+			border-right: solid;
+		}
+		.column.enterprise {
+			border-left: solid;
+			margin-top: -3px;
+		}
+	}
+	.questions {
+		margin: 30px 20px 25px;
+		p {
+			font-size: 18px;
+		}
+	}
+	.includes {
+		width: 100%;
+		.column  {
+			float: none;
+			width: 100%;
+			height: initial;
+			p {
+				margin: 0 auto;
+			}
+		}
+		.column.business {
+			border: none;
+			margin: 0;
+			.chose-if {
+				margin-top: 0;
+			}
+		}
+		.column.start-up {
+			border: none;
+			margin: 0;
+		}
+		.column.enterprise {
+			border: none;
+			margin: 0;
+			margin-bottom: 40px;
+		}
+		.chose-if {
+			height: 110px;
+			margin-bottom: -30px;
+		}
+		.features h1 {
+			margin-bottom: 20px;
+		}
+		.hyphen {
+			display: none;
+		}
+		.features {
+			margin-bottom: 33px;
+		}
+		.separator {
+			display: none;
+		}
+	}
+}
+/* iPads (portrait) and Smatphones landscape----------- */
+@media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
+	.container {
+		border-radius: 0px;
+	}
+	.box-right {
+		margin-right: 5%;
+	}
+	.box-left {
+		margin-left: 5%;
+	}
+	.prices {
+		.column {
+			width: 31%;
+		}
+		.column.business {
+			width: 32%;
+		}
+		.price button {
+			margin-left: 14px;
+		}
+	}
+	.includes {
+		width: 100%;
+		.column {
+			width: 31%;
+			.chose-if p {
+				width: initial;
+			}
+		}
+		.column.business {
+			width: 32%;
+		}
+	}
+}
+/*  Smatphones landscape----------- */
+@media only screen and  (min-device-width : 320px)  and (max-device-width : 667px)  and (orientation : landscape){
+	.container {
+		height: 100%;
+	}
+	.prices {
+		.column {
+			button {
+				width: 80%;
+				font-size: 13px;
+			}
+		}
+	}
+	input[type=radio]#year, input[type=radio]#month {
+		margin-left: 34px;
+	}
 }
