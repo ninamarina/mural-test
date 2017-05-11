@@ -497,7 +497,7 @@ input[type=range].slider:focus::-ms-fill-upper {
 	margin-bottom: -1px;
 }
 
-/* Smartphones (portrait and landscape) ----------- */
+/* Smartphones (portrait) */
 @media only screen and (min-device-width : 320px)  and (max-device-width : 480px){
 	body{
 		background: $white;
@@ -599,7 +599,7 @@ input[type=range].slider:focus::-ms-fill-upper {
 		}
 	}
 }
-/* iPads (portrait) and Smatphones landscape----------- */
+/* Tablet (portrait) and Smatphones (landscape) */
 @media only screen and (min-device-width : 480px) and (max-device-width : 1024px) {
 	.container {
 		border-radius: 0px;
@@ -634,7 +634,7 @@ input[type=range].slider:focus::-ms-fill-upper {
 		}
 	}
 }
-/*  Smatphones landscape----------- */
+/*  Smatphones (landscape) */
 @media only screen and  (min-device-width : 320px)  and (max-device-width : 667px)  and (orientation : landscape){
 	.container {
 		height: 100%;
