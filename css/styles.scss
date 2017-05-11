@@ -54,7 +54,6 @@ $white: #FFFFFF;
 * {
 	margin: 0;
 	padding: 0;
-	text-decoration: none;
 	font-style: normal;	
 	font-weight: normal;
 }
@@ -113,7 +112,7 @@ header {
 	h1 {
 		font-family: "ProximaNova-Semibold";
 		font-size: 24px;
-		margin: -6 0 2px;
+		margin: -6px 0 2px;
 		line-height: 32px;
 	}
 	h2 {
@@ -135,7 +134,7 @@ header {
 		font-size: 14px;
 		line-height: 20px;
 		text-align: right;
-		margin: 55px 0 16px;
+		margin: 55px -4px 16px 0px;
 		color: $grey3;
 	}
 	em{
@@ -146,6 +145,7 @@ header {
 		border-bottom-style: dashed;
 		border-bottom-width: 1px;
 		color: $grey3;
+		text-decoration: none;
 	}
 } 
 .header .title {
@@ -310,6 +310,7 @@ button {
 		border-bottom-width: 1px;
 		line-height: 26px;
 		color: $grey1;
+		text-decoration: none;
 	}
 }
 .includes {
@@ -439,7 +440,7 @@ input[type=range].slider:focus::-webkit-slider-runnable-track {
 	background: #5b5b5b;
 }
 input[type=range].slider::-moz-range-track {
-	width: 79%;
+	width: 90%;
 	height: 8px;
 	cursor: pointer;
 	box-shadow: 0px 0px 0px rgba(255, 255, 0, 0), 0px 0px 0px rgba(255, 255, 26, 0);
@@ -457,7 +458,7 @@ input[type=range].slider::-moz-range-thumb {
 	cursor: pointer;
 }
 input[type=range].slider::-ms-track {
-	width: 79%;
+	width: 100%;
 	height: 8px;
 	cursor: pointer;
 	background: transparent;
@@ -479,7 +480,7 @@ input[type=range].slider::-ms-fill-upper {
 input[type=range].slider::-ms-thumb {
 	box-shadow: 1.7px 1.7px 0px rgba(0, 0, 0, 0.67), 0px 0px 1.7px rgba(13, 13, 13, 0.67);
 	border: 0px solid rgba(0, 0, 0, 0);
-	height: 18px;
+	height: 30px;
 	width: 18px;
 	border-radius: 9px;
 	background: #d8d8d8;

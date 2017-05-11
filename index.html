@@ -1,163 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Checkout</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script>
-		$( document ).ready(function() {
-			$('.slider').on("change mousemove", function() {
-				$(this).parent().parent().find('.range-value').html($(this).val());
-				var price = $(this).val()*120;
-				$(this).parent().parent().find('.price em').html('$'+price);
-			});
-		});</script>
-	</head>
-	<body>
-		<header>
-			<div class="logo">
+
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+		</div>
+	</header>
+	<div class="container">
+		<div class="header">
+			<h1>READY TO TAKE THE NEXT STEP?</h1>
+			<div class="horizontal-separator"></div>
+			<div class="box-left">
+				<p>CURRENT PLAN:</p>
+				<h1>Free 30 Day Trial</h1>
+				<h2>You have: <b>13 days left</b></h2>
 			</div>
-		</header>
-		<div class="container">
-			<div class="header">
-				<h1>READY TO TAKE THE NEXT STEP?</h1>
-				<div class="horizontal-separator"></div>
-				<div class="box-left">
-					<p>CURRENT PLAN:</p>
-					<h1>Free 30 Day Trial</h1>
-					<h2>You have: <b>13 days left</b></h2>
-				</div>
-				<div class="box-right">
-					<p>Your team currently contains <em>12 members</em><br>
-						Want to <a href="">manage your team members</a>?
-					</p>
-				</div>
-				<div class="horizontal-separator"></div>
-				<div class="title">
-					<h2>Choose a plan that works best for your needs and your team size.<br>
-						And leave some room to grow!
-					</h2>
-				</div>
+			<div class="box-right">
+				<p>Your team currently contains <em>12 members</em>
+					<br> Want to <a href="">manage your team members</a>?
+				</p>
 			</div>
-			<div class="prices">
-				<div class="column start-up">
-					<h1>Startup</h1>
-					<div class="separator"></div>
-					<h2>5</h2>
-					<p>users</p>
-					<div class="separator"></div>
-					<div class="price">
-						<input type="radio" name="start-up" value="month" id="month" checked="checked"><label for="month"> <em>$29</em> / month </label><br>
-						<input type="radio" name="start-up" value="year" id="year"><label for="year"> <em>$300</em> / year</label><br>
-					</div>
-					<button>CHOOSE THIS PLAN</button>	
-				</div>
-				<div class="column business">
-					<h1>Business</h1>
-					<div class="separator"></div>
-					<h2 class="range-value">5</h2>
-					<p>users</p>
-					<div class="range-slider">
-						<input class="slider" type="range" value="5" min="5" max="30" step="1">
-					</div>
-					<div class="price">
-						<p><em>$600</em> / year </p>
-					</div>
-					<button>CHOOSE THIS PLAN</button>	
-				</div>
-				<div class="column enterprise">
-					<h1>Enterprise</h1>
-					<div class="separator"></div>
-					<h2>30+</h2>
-					<p>users</p>
-					<div class="separator"></div>
-					<div class="price">
-						<button>LEARN MORE</button><br>
-					</div>
-					<button>CONTACT US</button>	
-				</div>
-			</div>
-			<div class="questions">
-				<p>Questions? <a href="mailto:test@mural.com">Send us an email</a> or give us a call at <a href="tel:14158003524">+1 (415) 800 3524</a></p>
-			</div>
-			<div class="includes">
-				<div class="column start-up">
-					<div class="chose-if">
-						<h3>CHOOSE THIS PLAN IF YOU'RE A...</h3>
-						<p>Growing startup</p>
-						<div class="or"></div>
-						<p>Freelancer with a few rotating clients</p>
-					</div>
-					<div class="separator"></div>
-					<div class="features">
-						<h1>STARTUP includes:</h1>
-						<p>5 Project Rooms</p>
-						<p>xGB Storage</p>
-						<p>Visual Thinking Tools</p>
-						<p>Collaboration Tools</p>
-						<p>Self-Service Support</p>
-						<div class="hyphen"></div>
-						<div class="hyphen"></div>
-						<div class="hyphen"></div>
-						<div class="hyphen"></div>
-						<div class="hyphen"></div>
-						<div class="hyphen"></div>
-					</div>
-				</div>
-				<div class="column business">
-					<div class="chose-if">
-						<h3>CHOOSE THIS PLAN IF YOU'RE A...</h3>
-						<p>Leading design team within a big company</p>
-						<div class="or"></div>
-						<p>Distributed business in which visual
-							collaboration is key to success
-						</p>
-					</div>
-					<div class="separator"></div>
-					<div class="features">
-						<h1>Business includes:</h1>
-						<p>Unlimited Rooms</p>
-						<p>Unlimited Storage</p>
-						<p>Visual Thinking Tools</p>
-						<p>Collaboration Tools</p>
-						<p>Priority Support</p>
-						<p>Larger Team Sizes</p>
-						<p>Custom Templates</p>
-						<p>Guest Accounts</p>
-						<div class="hyphen"></div>
-						<div class="hyphen"></div>
-						<div class="hyphen"></div>
-					</div>
-				</div>
-				<div class="column enterprise">
-					<div class="chose-if">
-						<h3>CHOOSE THIS PLAN IF YOU'RE A...</h3>
-						<p>Business that successfully integrated MURAL
-							and is ready to deploy at scale
-						</p>
-						<div class="or"></div>
-						<p>Design-led Fortune 1000 Company</p>
-					</div>
-					<div class="separator"></div>
-					<div class="features">
-						<h1>ENTERPRISE includes:</h1>
-						<p>Unlimited Rooms</p>
-						<p>Unlimited Storage</p>
-						<p>Visual Thinking Tools</p>
-						<p>Collaboration Tools</p>
-						<p>On-Call Customer Success Manager</p>
-						<p>Multiple Teams</p>
-						<p>Custom Templates</p>
-						<p>Guest Accounts</p>
-						<p>Enterprise-Grade Security</p>
-						<p>Admin Dashboard &amp; Analytics</p>
-						<p>Single Sign-On SAML Integration</p>
-					</div>
-				</div>
-				<div style="clear:both;"></div>
+			<div class="horizontal-separator"></div>
+			<div class="title">
+				<h2>Choose a plan that works best for your needs and your team size.<br>
+					And leave some room to grow!
+				</h2>
 			</div>
 		</div>
-	</body>
-	</html>
+		<div class="prices">
+			<div class="column start-up">
+				<h1>Startup</h1>
+				<div class="separator"></div>
+				<h2>5</h2>
+				<p>users</p>
+				<div class="separator"></div>
+				<div class="price">
+					<input type="radio" name="start-up" value="month" id="month" checked="checked">
+					<label for="month"> <em>$29</em> / month </label>
+					<br>
+					<input type="radio" name="start-up" value="year" id="year">
+					<label for="year"> <em>$300</em> / year</label>
+					<br>
+				</div>
+				<button>CHOOSE THIS PLAN</button>
+			</div>
+			<div class="column business">
+				<h1>Business</h1>
+				<div class="separator"></div>
+				<h2 class="range-value">5</h2>
+				<p>users</p>
+				<div class="range-slider">
+					<input class="slider" type="range" value="5" min="5" max="30" step="1">
+				</div>
+				<div class="price">
+					<p><em>$600</em> / year </p>
+				</div>
+				<button>CHOOSE THIS PLAN</button>
+			</div>
+			<div class="column enterprise">
+				<h1>Enterprise</h1>
+				<div class="separator"></div>
+				<h2>30+</h2>
+				<p>users</p>
+				<div class="separator"></div>
+				<div class="price">
+					<button>LEARN MORE</button>
+					<br>
+				</div>
+				<button>CONTACT US</button>
+			</div>
+		</div>
+		<div class="questions">
+			<p>Questions? <a href="mailto:test@mural.com">Send us an email</a> or give us a call at <a href="tel:14158003524">+1 (415) 800 3524</a></p>
+		</div>
+		<div class="includes">
+			<div class="column start-up">
+				<div class="chose-if">
+					<h3>CHOOSE THIS PLAN IF YOU'RE A...</h3>
+					<p>Growing startup</p>
+					<div class="or"></div>
+					<p>Freelancer with a few rotating clients</p>
+				</div>
+				<div class="separator"></div>
+				<div class="features">
+					<h1>STARTUP includes:</h1>
+					<p>5 Project Rooms</p>
+					<p>xGB Storage</p>
+					<p>Visual Thinking Tools</p>
+					<p>Collaboration Tools</p>
+					<p>Self-Service Support</p>
+					<div class="hyphen"></div>
+					<div class="hyphen"></div>
+					<div class="hyphen"></div>
+					<div class="hyphen"></div>
+					<div class="hyphen"></div>
+					<div class="hyphen"></div>
+				</div>
+			</div>
+			<div class="column business">
+				<div class="chose-if">
+					<h3>CHOOSE THIS PLAN IF YOU'RE A...</h3>
+					<p>Leading design team within a big company</p>
+					<div class="or"></div>
+					<p>Distributed business in which visual collaboration is key to success
+					</p>
+				</div>
+				<div class="separator"></div>
+				<div class="features">
+					<h1>Business includes:</h1>
+					<p>Unlimited Rooms</p>
+					<p>Unlimited Storage</p>
+					<p>Visual Thinking Tools</p>
+					<p>Collaboration Tools</p>
+					<p>Priority Support</p>
+					<p>Larger Team Sizes</p>
+					<p>Custom Templates</p>
+					<p>Guest Accounts</p>
+					<div class="hyphen"></div>
+					<div class="hyphen"></div>
+					<div class="hyphen"></div>
+				</div>
+			</div>
+			<div class="column enterprise">
+				<div class="chose-if">
+					<h3>CHOOSE THIS PLAN IF YOU'RE A...</h3>
+					<p>Business that successfully integrated MURAL and is ready to deploy at scale
+					</p>
+					<div class="or"></div>
+					<p>Design-led Fortune 1000 Company</p>
+				</div>
+				<div class="separator"></div>
+				<div class="features">
+					<h1>ENTERPRISE includes:</h1>
+					<p>Unlimited Rooms</p>
+					<p>Unlimited Storage</p>
+					<p>Visual Thinking Tools</p>
+					<p>Collaboration Tools</p>
+					<p>On-Call Customer Success Manager</p>
+					<p>Multiple Teams</p>
+					<p>Custom Templates</p>
+					<p>Guest Accounts</p>
+					<p>Enterprise-Grade Security</p>
+					<p>Admin Dashboard &amp; Analytics</p>
+					<p>Single Sign-On SAML Integration</p>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(function() {
+			var $value = $('.business .range-value');
+			var $price = $('.business .price em');
+
+			$('.business .slider').on("change mousemove", function() {
+				var val = $(this).val();
+
+				$value.html(val);
+				$price.html('$' + (val * 120));
+			});
+		});
+
+	</script>
+</body>
+
+</html>
