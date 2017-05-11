@@ -190,13 +190,11 @@ header {
       background: #888888; }
   .prices .column.start-up {
     border-right: none; }
-  .prices .column.enterprise {
-    border-left: none; }
   .prices .price {
     text-align: left;
     height: 114px; }
     .prices .price button {
-      margin: 69px 0 0 34px;
+      margin: 69px 0 0 3px;
       background: #FFFFFF;
       color: #393939;
       border: #393939;
@@ -204,6 +202,10 @@ header {
       border-width: 2px; }
     .prices .price p {
       margin: 31px 0 0 -20px; }
+  .prices .column.enterprise {
+    border-left: none; }
+    .prices .column.enterprise .price {
+      text-align: center; }
   .prices .separator {
     height: 1px;
     background: #B7B7B7;
@@ -526,8 +528,6 @@ input[type=range].slider:focus::-ms-fill-upper {
     width: 31%; }
   .prices .column.business {
     width: 32%; }
-  .prices .price button {
-    margin-left: 14px; }
 
   .includes {
     width: 100%; }

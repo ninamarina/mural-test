@@ -237,14 +237,11 @@ header {
 	.column.start-up{
 		border-right: none;
 	}
-	.column.enterprise{
-		border-left: none;
-	}
 	.price{
 		text-align: left;
 		height: 114px;
 		button {
-			margin: 69px 0 0 34px;
+			margin: 69px 0 0 3px;
 			background: $white;
 			color: $grey1;
 			border: $grey1;
@@ -253,6 +250,12 @@ header {
 		}
 		p {
 			margin: 31px 0 0 -20px;
+		}
+	}
+	.column.enterprise{
+		border-left: none;
+		.price {
+			text-align: center;
 		}
 	}
 	.separator {
@@ -617,9 +620,6 @@ input[type=range].slider:focus::-ms-fill-upper {
 		}
 		.column.business {
 			width: 32%;
-		}
-		.price button {
-			margin-left: 14px;
 		}
 	}
 	.includes {
